@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main</title>
+
+        <style>            
+            /* Area 1 */
+            #header {
+              height: 120px;
+              text-align: center;
+            }
+            #header .menu {
+              display: inline-block;
+              margin-top:27px;
+              margin-left: 40px;
+              margin-right:40px;
+              font-weight: bold;
+              color: black;
+            }
+            #header .img {
+              display: inline-block;
+              padding-top:33px;
+              margin-top: 0px;
+              margin-left: 70px;
+              margin-right:70px;
+            }
+            #header .menu a {
+              text-decoration: none;
+              color: black;
+            }
+            #header .menu a:hover {
+              color: red;
+              text-decoration: underline;
+            } 
+            
+
+            /* Area 2 */
+            #main_picture {
+              height: 464px;            
+            }
+            #main_picture img {
+              max-width: 100%;
+              height: 464px;
+            }
+
+            /* Area 3 */
+            .icon_title_text {
+              /* background-color: rgba(255, 192, 203, .5); */
+              text-align: center;
+              width: 250px;
+              height: 100px;
+              margin: 30px auto;
+            }
+            /* icon-box area */
+            .icon_box {
+              margin: auto;
+              width: 1240px;
+              height: 200px;
+              /* background-color: yellow; */
+              text-align: center;
+            }
+            .icon_box p {                          
+              display: inline-block;
+              /* background-color:rgba(144, 238, 144, .5);               */
+              width: 250px;
+              height: 180px;
+              margin: 20px;
+              line-height: 1.8;
+            }
+            .icon_box p hr {
+              width: 10px;
+              
+            }
+
+            /* Area 4 */
+            .chefs {
+              height: 304px;
+              background-color: rgba(128, 128, 128, 0.2);
+            }
+            
+            .chefs div {                        
+              /* background-color: green; */
+              margin-top: 1px;
+              margin-left: 300px;
+              /* margin 상쇄 현상 발생 방지 */ 
+              border: 1px solid transparent;
+              width: 814px;
+              height: 304px;
+            }
+            .chefs div p {
+              display: inline-block;
+              /* background-color: red; */
+              width: 500px;
+              height: 100px;
+              margin-top:100px;         
+              margin-right: 0px;    
+              font-weight: bold;
+            }
+            .chefs div img {
+              position:relative;
+              float: right;
+            }
+            
+        </style>
+    </head>
+
+
+    <body>
+      <!-- area 1 -->
+      <div id="header">
+        <div class="menu"><a href="#">How it works</a></div>        
+        <div class="menu"><a href="#">Gifts</a></div>
+        <div class="menu"><a href="about.html">About</a></div>
+        <img class="img" src="Resource_1_02/logo.png">
+        <div class="menu"><a href="#">Login</a></div>
+        <div class="menu"><a href="#">Members</a></div>
+        <div class="menu"><a href="#">Contacts</a></div>
+      </div>
+      
+        
+        <!-- area 2 -->
+        <div id="main_picture">
+          <img src="Resource_1_02/main.png">
+        </div>
+        
+        <!-- area 3 -->
+        <p class="icon_title_text">
+          <span style="font-size: small; line-height: 1.8;">"WHAT'S FOR DINNER"</span>        
+          <br>
+          <span style="font-size: large; font-weight: bold;">FINALLY HAS AN EASY ANSWER</span>          
+        </p>
+
+        <div class="icon_box">
+          <p>
+            <img src="Resource_1_02/icon1.png"> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit.                        
+          </p>
+          <p>
+            <img src="Resource_1_02/icon2.png"> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit.
+          </p>
+          <p>
+            <img src="Resource_1_02/icon3.png"> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit.
+          </p>
+          <p>
+            <img src="Resource_1_02/icon4.png"> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit.
+          </p>
+        </div>
+
+        <!-- area 4 -->
+        <div class="chefs">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Laborum dicta dignissimos totam alias pariatur veritatis praesentium ducimus harum delectus tempore.
+            </p>
+            <img src="Resource_1_02/chef.png">
+          </div>            
+        </div>
+        
+    </body>
+</html>

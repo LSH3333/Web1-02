@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>about.html</title>
+        <style>
+            /* Area 1 */
+            #top {
+                width: 1000px;
+                height: 500px;
+            }
+            .top_left {
+                /* border-top: 1px solid transparent; */
+                display: inline-block;
+                width: 750px;
+                height: 500px;
+                background: url(./Resource_1_02/chef_about.png);
+                /* 
+                    Adding the text creates a baseline for the #parentwrap div, 
+                    so the div gets aligned to that. Without the text, 
+                    there's no baseline so the div takes a fallback layout mode.
+                    To fix, set add #parentwrap { vertical-align:top; }
+                 */
+                vertical-align: top;
+            }
+            .top_left div {
+                /* border-top: 1px solid transparent; */
+                margin-top: 250px;                
+                background-color: rgba(0, 128, 0, 0.5);
+                width: 250px;
+                height: 250px;
+            }
+            .top_left div > p {
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 25px;
+                font-weight: 1000;
+                font-size: larger;
+                text-align: left;            
+            }
+            .top_right {
+                display: inline-block;
+                width: 250px;
+                height: 500px;
+            }
+            
+            /* Area 2 */
+            #box_all {
+                width: 1000px;
+                height: 500px;
+                background-color: blue;                         
+            }
+
+            #box_all .box_left {                
+                display: inline-block;
+                vertical-align: top;       
+                width: 750px;
+                height: 500px;
+                background-color: brown;
+            }
+            #box_all .box_left div:nth-child(2n) {
+                width: 210px;
+                height: 210px;
+                background-color:rgba(230,128,67,255);
+                padding:20px;
+                float: left;                
+            }
+            #box_all .box_left div:nth-child(2n+1) {
+                float:left;
+                width: 210px;
+                height: 210px;
+                padding:20px;
+                background-color: rgba(108,95,77,255);                
+            }
+            #box_all .box_left div p:nth-child(1) {
+                margin: 10px 10px 0px 10px;
+                font-weight: 900;
+                font-size: large;
+            }             
+            #box_all .box_left div p:nth-child(2) {
+                margin: 10px 10px 0px 10px;
+                font-weight: 900;
+                font-size: small;
+            }
+
+            #box_all .box_right {
+                display: inline-block;
+                width: 210px;
+                height: 460px;
+                background-color: yellow;
+                padding: 20px;
+                font-weight: 900;
+                font-size: small;
+            }
+            
+
+            /* Area 3 */
+            #bottom {
+                width: 1000px;
+                height: 40px;
+                background-color: pink;  
+            }
+            #bottom .f_left {                
+                display: inline-block;
+                width: 750px;
+                height: 40px;
+                background-color: grey;
+            }
+            #bottom .f_left div {
+                display: inline-block;
+                font-size: small;
+                font-weight: bolder;
+                text-align: center;
+                margin: 13px 13px;
+            }
+            .icon {
+                display: inline-block;
+                width:2px;
+                height: 12px;
+                background-color: orange;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Area 1 -->
+        <div id="top">
+            <div class="top_left">
+                <div><p>
+                    GLOBAL<br>BUSINESS
+                </p><p style="font-size: medium;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quasi!</p></div>
+                </div><div class="top_right">
+                    <img style="display: block;" src="Resource_1_02/right1.png">
+                    <img style="display: block;" src="Resource_1_02/right2.png">            
+                </div>
+        </div>
+        <!-- Area 2 -->
+        <div id="box_all">
+            <div class="box_left">
+                <div><p>TITLE</p><p style="margin-top: 0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, ipsam.</p></div>
+                <div><p>TITLE</p><p style="margin-top: 0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, ipsam.</p></div>
+                <div><p style="font-size: small">3</p></div>
+                <div><p style="font-size: small">4</p></div>
+                <div><p style="font-size: small">5</p></div>
+                <div><p style="font-size: small">6</p></div>
+            </div><div class="box_right">
+                <p>7</p>
+            </div>
+        </div>
+        <!-- Area 3 -->
+        <div id="bottom">
+            <div class="f_left">
+                <div>법적고지</div><span class="icon"></span>
+                <div>이메일무단수집거부</div><span class="icon"></span>
+                <div>이용약관</div><span class="icon"></span>
+                <div>개인정보취급방침</div><span class="icon"></span>
+                <div>고객센터</div><span class="icon"></span>
+                <div>입찰공고</div>
+            </div>
+        </div>
+    </body>
+</html>
